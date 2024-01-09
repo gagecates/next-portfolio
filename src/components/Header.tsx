@@ -15,7 +15,7 @@ export function Header() {
   };
 
   return (
-    <div className="ml-16">
+    <div className="lg:ml-16 lg:pt-24 mt-4 flex flex-col items-center lg:items-start">
       <div className="text-5xl mb-4 title-font ">{name()}</div>
       <p className="ml-1">Full-stack Software Engineer</p>
       <Nav />

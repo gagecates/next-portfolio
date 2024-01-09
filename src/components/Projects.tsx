@@ -3,7 +3,7 @@ import SectionWrapper from "@/components/SectionWrapper";
 export default function Projects() {
   return (
     <SectionWrapper id="projects">
-      <h1>Projects</h1>
+      <h1 className="text-xl mb-6 text-indigo-800">Projects</h1>
       <div>
         Generate Lorem Ipsum placeholder text for use in your graphic, print and
         web layouts, and discover plugins for your favorite writing, design and
