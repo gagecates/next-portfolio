@@ -1,11 +1,11 @@
-"use client";
+"use client"
 
-import classnames from "classnames";
-import React, { useEffect, useState, useRef } from "react";
+import React, {useState, useEffect, useRef, RefObject} from 'react'
 
-export default function SectionView({ children }: { children: any }) {
-  const [inView, setInView] = useState<boolean>(false);
-  const ref = useRef(null);
+export default function useSectionView(): [RefObject<HTMLDivElement>, boolean] {
+    const ref = useRef<any>(null);
+    const [inView, setInView] = useState<boolean>(false);
+
 
   // check if section is in viewpoint for animations
   useEffect(() => {
@@ -30,17 +30,7 @@ export default function SectionView({ children }: { children: any }) {
         observer.unobserve(ref.current);
       }
     };
-  }, []);
+  }, [ref]);
 
-  return (
-    <div
-      ref={ref}
-      className={classnames(
-        "transition-opacity w-full",
-        !inView ? "opacity-10" : ""
-      )}
-    >
-      {children}
-    </div>
-  );
+  return [ref, inView]
 }

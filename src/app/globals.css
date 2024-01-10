@@ -103,7 +103,7 @@ html {
   -webkit-animation-iteration-count: infinite, infinite;
   -webkit-animation-play-state: running, running;
   animation-name: snowflakes-fall, snowflakes-shake;
-  animation-duration: 10s, 3s;
+  animation-duration: 15s, 3s;
   animation-timing-function: linear, ease-in-out;
   animation-iteration-count: infinite, infinite;
   animation-play-state: running, running;
@@ -157,4 +157,20 @@ html {
   left: 90%;
   -webkit-animation-delay: 3s, 1.5s;
   animation-delay: 3s, 1.5s;
+}
+
+@keyframes fillAnimation {
+  from {
+      background-size: 0% 100%;
+  }
+  to {
+      background-size: 100% 100%;
+  }
+}
+
+.animated-fill {
+  background-image: linear-gradient(to right, rgb(55 48 163), rgb(55 48 163));
+  background-size: 0% 100%;
+  background-repeat: no-repeat;
+  animation: fillAnimation 4s ease forwards; /* Adjust timing as needed */
 }
