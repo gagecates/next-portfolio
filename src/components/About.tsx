@@ -25,6 +25,9 @@ export default function About() {
               to what is in store for me next.
             </p>
           </div>
+          <div>
+            <p>And (obviously) my favorite color is purple.</p>
+          </div>
           <p className="mt-6">Anyways, enough about me. Onward!</p>
         </div>
       </SectionView>

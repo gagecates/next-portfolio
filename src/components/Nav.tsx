@@ -10,7 +10,7 @@ export default function Nav() {
   const links = [
     { ref: "#main", title: "About" },
     { ref: "#experience", title: "Experience" },
-    { ref: "#projects", title: "Projects" },
+    { ref: "#projects", title: "My work" },
     { ref: "#contact", title: "Contact" },
   ];
 

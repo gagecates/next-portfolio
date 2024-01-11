@@ -14,22 +14,24 @@ export default function ExperienceDetails({ job }: Props) {
   return (
     <SectionView>
       <div className="flex lg:flex-row flex-col gap-4">
-        <div className="hidden lg:block min-w-36 text-sm text-gray-500 lg:mt-1">
+        <div className="hidden lg:block min-w-44 text-sm text-gray-500 lg:mt-1">
           {job.date}
         </div>
         <div>
           <div className="flex items-center gap-4">
-            <div className="text-2xl">{job.company}</div>
+            <div className="text-2xl text-indigo-800">{job.company}</div>
             <div className="lg:hidden min-w-44 text-sm text-gray-500">
               {job.date}
             </div>
           </div>
           <div className="text-sm pt-1 pb-3 text-gray-400">{job.position}</div>
           {job.duties.map((duty) => (
-            <div key={`job-duty-${job.title}`} className="text-sm mb-2">
-              <span></span>
-              <span>{duty}</span>
-            </div>
+            <ul
+              key={`job-duty-${job.title}`}
+              className="text-sm mb-2 list-disc marker:text-indigo-800"
+            >
+              <li>{duty}</li>
+            </ul>
           ))}
           <div className="flex gap-2.5 flex-wrap mt-4">
             {job.stack.map((item: any) => (

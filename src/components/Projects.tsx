@@ -1,15 +1,16 @@
 import SectionWrapper from "@/components/SectionWrapper";
+import connectFourLogo from "../../public/images/connect4.webp";
+import Project from "./Project";
 
 export default function Projects() {
   return (
     <SectionWrapper id="projects">
-      <h1 className="text-xl mb-6 text-indigo-800">Projects</h1>
-      <div>
-        Generate Lorem Ipsum placeholder text for use in your graphic, print and
-        web layouts, and discover plugins for your favorite writing, design and
-        blogging tools. Explore the origins, history and meaning of the famous
-        passage, and learn how Lorem Ipsum went from scrambled Latin passage to
-        ubiqitous ...
+      <h1 className="text-xl mb-6 text-indigo-800">My Work</h1>
+      <div className="grid grid-flow-col grid-rows-2 gap-20">
+        <Project name="Connnect Four" image={connectFourLogo} />
+        <Project name="Grid Graph" image={connectFourLogo} />
+        <Project name="Let me check my schedule" image={connectFourLogo} />
+        <Project name="Where to?" image={connectFourLogo} />
       </div>
     </SectionWrapper>
   );

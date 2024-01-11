@@ -23,7 +23,6 @@ export default function Home() {
           <Skills />
           <Projects />
           <Contact />
-          mentorship snippet of what ashton said
           <div className="lg:hidden mb-6 lg:mb-0">
             <Creds />
           </div>

@@ -21,7 +21,9 @@ export default function RootLayout({
       <body className={inter.className}>
         <div className="px-10 h-full flex justify-center">
           <SnowFall />
-          <div className="bg-black max-w-screen-2xl h-full">{children}</div>
+          <div className="bg-black max-w-screen-2xl h-full text-gray-200 font-mono">
+            {children}
+          </div>
         </div>
       </body>
     </html>

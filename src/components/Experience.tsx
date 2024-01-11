@@ -42,7 +42,7 @@ export default function Experience() {
     <SectionWrapper id="experience">
       <div>
         <h1 className="text-xl mb-6 text-indigo-800">Experience</h1>
-        <div className="flex flex-col gap-10 flex-grow">
+        <div className="flex flex-col gap-16 flex-grow">
           {jobs.map((j: any) => (
             <ExperienceDetails key={`job-listing-${j.title}`} job={j} />
           ))}
