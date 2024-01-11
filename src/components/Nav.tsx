@@ -26,7 +26,7 @@ export default function Nav() {
             <span className="mr-2">{activeLink === l.title ? "//" : "#"}</span>
             <span
               className={classNames(
-                "hover:text-indigo-800 hover:relative hover:left-1 inline",
+                "hover:text-indigo-800 hover:relative hover:left-1 inline text-xs mobile:text-sm",
                 animationCheck(l.title)
               )}
               onClick={() => setActiveLink(l.title)}

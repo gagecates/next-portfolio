@@ -5,7 +5,7 @@ export default function About() {
   return (
     <SectionWrapper>
       <SectionView>
-        <div className="flex flex-col gap-4 text-xl">
+        <div className="flex flex-col gap-4 mobile:text-xl">
           <div>
             <p>
               I left my life as an electrician behind to persue software
