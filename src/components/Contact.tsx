@@ -21,7 +21,6 @@ export default function Contact() {
 
   return (
     <SectionWrapper id="contact">
-      <h1 className="text-xl mb-6 text-indigo-800">Get in touch!</h1>
       <div className="w-full flex flex-col gap-6">
         <div className="flex gap-6">
           <TextInput
@@ -51,7 +50,7 @@ export default function Contact() {
               "text-indigo-800 border border-indigo-800 px-4 py-2 min-w-40 rounded-xl cursor-pointer ",
               {
                 "bg-opacity-75 cursor-default ": !formValid,
-                "cursor-pointer bg-indigo-800 text-black hover:bg-opacity-50":
+                "cursor-pointer bg-indigo-800 text-white hover:bg-opacity-50":
                   formValid,
               }
             )}

@@ -17,7 +17,7 @@ export default function Home() {
             <Creds />
           </div>
         </div>
-        <div className="lg:w-2/3 w-auto flex flex-col items-center">
+        <div className="w-auto lg:w-2/3 flex flex-col items-center">
           <About />
           <Experience />
           <Skills />

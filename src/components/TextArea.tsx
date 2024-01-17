@@ -9,7 +9,7 @@ export default function TextArea({ placeholder, value, setValue }: Props) {
     <div>
       <textarea
         placeholder={placeholder}
-        className="w-full h-48 rounded-lg p-2 text-white placeholder-indigo-800 bg-white bg-opacity-5 border-indigo-800 border"
+        className="w-full h-48 rounded-lg p-2 text-white bg-white bg-opacity-5 border-indigo-800 border"
         value={value}
         onChange={(e) => setValue(e.target.value)}
       />
