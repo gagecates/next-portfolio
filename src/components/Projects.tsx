@@ -41,7 +41,7 @@ export default function Projects() {
   ];
   return (
     <SectionWrapper id="projects">
-      <div className="grid grid-flow-col grid-rows-2 gap-10">
+      <div className="grid grid-flow-col grid-rows-3 lg:grid-rows-2 gap-10">
         {projects.map((proj) => (
           <div key={`project-${proj.name}`}>
             <Project info={proj} />

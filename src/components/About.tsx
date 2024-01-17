@@ -4,7 +4,7 @@ import SectionView from "./SectionView";
 export default function About() {
   return (
     <SectionWrapper>
-      <div className="flex flex-col gap-4 mobile:text-xl lg:typewriter-about">
+      <div className="flex flex-col gap-4 mobile:text-xl typewriter-about">
         <SectionView>
           <p>
             I left my life as an electrician behind to persue software
@@ -26,9 +26,6 @@ export default function About() {
         </SectionView>
         <SectionView>
           <p>And... my favorite color is purple.</p>
-        </SectionView>
-        <SectionView>
-          <p className="mt-6s">Anyways, enough about me. Onward!</p>
         </SectionView>
       </div>
     </SectionWrapper>

@@ -23,7 +23,9 @@ export default function Nav() {
       <div className="flex lg:flex-col gap-6">
         {links.map((l: Record<string, string>) => (
           <Link key={`nav-link-${l.ref}`} href={l.ref}>
-            <span className="mr-2">{activeLink === l.title ? "//" : "#"}</span>
+            <span className="mr-2 text-xs mobile:text-sm">
+              {activeLink === l.title ? "//" : "#"}
+            </span>
             <span
               className={classNames(
                 "hover:text-indigo-800 hover:relative hover:left-1 inline text-xs mobile:text-sm",
