@@ -2,6 +2,7 @@ import SectionWrapper from "@/components/sections/SectionWrapper";
 import connectFourLogo from "/public/images/connect4.webp";
 import gridGraphLogo from "/public/images/grid-graph.webp";
 import schedulerLogo from "/public/images/calendar-image.webp";
+import sportsNStuffLogo from "/public/images/sportsNStuffLogo.png";
 import Project from "./Project";
 
 export default function Projects() {
@@ -30,14 +31,14 @@ export default function Projects() {
       github: "https://github.com/gagecates/connect-four",
       stack: ["React", "GitHub Pages"],
     },
-    // {
-    //   name: "Where to?",
-    //   image: connectFourLogo,
-    //   url: "",
-    //   desc: "",
-    //   github: "",
-    //   stack: [],
-    // },
+    {
+      name: "Sports n' Stuff",
+      image: sportsNStuffLogo,
+      url: "https://golf-stuff-fwbvtvz56-gagecates.vercel.app/",
+      desc: "Have a favorite sport you like to keep up with? Check out Sports n' Stuff to get the most recent sports news of your liking. Built with Next.js.",
+      github: "https://github.com/gagecates/golf-stuff",
+      stack: ["React", "Next.js"],
+    },
   ];
   return (
     <SectionWrapper id="projects">
