@@ -10,7 +10,7 @@ export default function Projects() {
     {
       name: "Sports n' Stuff",
       image: sportsNStuffLogo,
-      url: "https://golf-stuff-fwbvtvz56-gagecates.vercel.app/",
+      url: "https://golf-stuff-cvxqycsrp-gagecates.vercel.app/",
       desc: "Have a favorite sport you like to keep up with? Check out Sports n' Stuff to get the most recent sports news of your liking. Built with Next.js.",
       github: "https://github.com/gagecates/golf-stuff",
       stack: ["React", "Next.js"],
