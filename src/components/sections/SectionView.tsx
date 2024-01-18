@@ -37,7 +37,7 @@ export default function SectionView({ children }: { children: any }) {
       ref={ref}
       className={classnames(
         "transition-opacity w-full",
-        !inView ? "opacity-10" : ""
+        !inView ? "mobile:opacity-10" : ""
       )}
     >
       {children}
