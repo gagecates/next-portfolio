@@ -1,11 +1,11 @@
-import About from "@/components/About";
-import Contact from "@/components/Contact";
-import Experience from "@/components/Experience";
+import About from "@/components/sections/About";
+import Contact from "@/components/sections/Contact";
+import Experience from "@/components/sections/experience/Experience";
 import { Creds } from "@/components/Creds";
 import { Header } from "@/components/Header";
 import Image from "next/image";
-import Projects from "@/components/Projects";
-import Skills from "@/components/Skills";
+import Projects from "@/components/sections/projects/Projects";
+import Skills from "@/components/sections/skills/Skills";
 
 export default function Home() {
   return (

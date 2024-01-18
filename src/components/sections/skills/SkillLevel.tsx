@@ -18,10 +18,12 @@ export default function SkillLevel({ name, width, logo }: Props) {
       <Image src={logo} alt={name} width={40} height={60} />
       {/* <div className="min-w-16">{name}</div> */}
       <div
-        className={classNames(`${width} rounded-2xl h-9`, {
+        className={classNames(`${width} rounded-2xl h-9 text-black p-2`, {
           "animated-fill": inView,
         })}
-      />
+      >
+        {name}
+      </div>
     </div>
   );
 }

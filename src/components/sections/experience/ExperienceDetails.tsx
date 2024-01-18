@@ -1,4 +1,4 @@
-import SectionView from "./SectionView";
+import SectionView from "../SectionView";
 
 type Props = {
   job: {
@@ -6,6 +6,7 @@ type Props = {
     date: string;
     company: string;
     position: string;
+    description: string;
     duties: string[];
     stack: string[];
   };
@@ -19,12 +20,16 @@ export default function ExperienceDetails({ job }: Props) {
         </div>
         <div>
           <div className="flex items-center gap-4">
-            <div className="text-2xl text-indigo-800">{job.company}</div>
+            <div className="text-3xl text-indigo-800">{job.company}</div>
             <div className="lg:hidden min-w-44 text-sm text-gray-500">
               {job.date}
             </div>
           </div>
-          <div className="text-sm pt-1 pb-3 text-gray-400">{job.position}</div>
+
+          <div className="text-sm pt-1 pb-3 text-gray-200">{job.position}</div>
+          <div className="min-w-44 text-sm text-gray-500 mb-3">
+            {job.description}
+          </div>
           {job.duties.map((duty) => (
             <ul
               key={`job-duty-${job.title}`}

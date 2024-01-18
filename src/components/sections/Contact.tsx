@@ -1,9 +1,10 @@
 "use client";
 
 import React, { useState } from "react";
-import SectionWrapper from "@/components/SectionWrapper";
-import TextInput from "./TextInput";
-import TextArea from "./TextArea";
+import emailjs from "@emailjs/browser";
+import SectionWrapper from "@/components/sections/SectionWrapper";
+import TextInput from "../text/TextInput";
+import TextArea from "../text/TextArea";
 import classNames from "classnames";
 
 export default function Contact() {
@@ -12,12 +13,55 @@ export default function Contact() {
   const [email, setEmail] = useState<string>("");
   const [phoneNumber, setPhoneNumber] = useState<string>("");
   const [message, setMessage] = useState<string>("");
+  const [loading, setLoading] = useState<boolean>(false);
+  const [sent, setSent] = useState<boolean>(false);
+
+  const clearValues = () => {
+    setFirstName("");
+    setLastName("");
+    setEmail("");
+    setPhoneNumber("");
+    setMessage("");
+  };
 
   const handleSubmit = () => {
-    console.log("submit");
+    setLoading(true);
+
+    emailjs
+      .send(
+        process.env.NEXT_PUBLIC_EMAIL_SERVICE_ID ?? "",
+        process.env.NEXT_PUBLIC_EMAIL_TEMPLATE_ID ?? "",
+        {
+          from_name: `${firstName} ${lastName}`,
+          from_email: email,
+          from_phone: phoneNumber,
+          message: message,
+        },
+        process.env.NEXT_PUBLIC_EMAIL_PUBLIC_KEY ?? ""
+      )
+      .then(
+        (result) => {
+          setLoading(false);
+          setSent(true);
+          clearValues();
+        },
+        (error) => {
+          alert(
+            "Woops, there was an issue sending the email. Please try again!"
+          );
+          setLoading(false);
+        }
+      );
   };
 
   const formValid = firstName && lastName && email && message;
+
+  const getButtonText = () => {
+    if (sent) return "Sent!";
+    if (loading) return "Sending...";
+    if (formValid) return "Send";
+    if (!formValid) return "Need more info please!";
+  };
 
   return (
     <SectionWrapper id="contact">
@@ -45,7 +89,7 @@ export default function Contact() {
         <TextArea placeholder="Message" value={message} setValue={setMessage} />
         <div className="flex items-center justify-center">
           <button
-            disabled={!formValid}
+            disabled={!formValid || sent || loading}
             className={classNames(
               "text-indigo-800 border border-indigo-800 px-4 py-2 min-w-40 rounded-xl cursor-pointer ",
               {
@@ -56,7 +100,7 @@ export default function Contact() {
             )}
             onClick={handleSubmit}
           >
-            {formValid ? "Send!" : "Need more info than that!"}
+            {getButtonText()}
           </button>
         </div>
       </div>

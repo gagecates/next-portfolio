@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import ProjectOverlay from "./ProjectOverlay";
-import SectionView from "./SectionView";
+import SectionView from "../SectionView";
 
 type Props = {
   info: {
