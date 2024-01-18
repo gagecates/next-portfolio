@@ -15,7 +15,7 @@ export default function ProjectOverlay({ info }: Props) {
   return (
     <div className=" text-center p-4 rounded-xl absolute top-0 left-0 w-full h-full bg-gray-200 bg-opacity-90 flex gap-1 justify-between items-center flex-col text-black animate-slideDown duration-1000">
       <div className="text-xl text-indigo-800">{name}</div>
-      <div className="text-xs mobile:text-smallish">{desc}</div>
+      <div className="text-xs mobile:text-lg">{desc}</div>
       <div className="flex gap-2 flex-wrap">
         {stack.map((item) => (
           <div

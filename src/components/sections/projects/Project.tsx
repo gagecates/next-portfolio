@@ -36,7 +36,7 @@ export default function Project({ info }: Props) {
     <SectionView>
       <div
         onClick={() => setProjectOverlay({ info })}
-        className="w-64 h-64 lg:w-80 lg:h-80 relative"
+        className="w-64 h-64 lg:w-96 lg:h-96 relative"
         onMouseLeave={() => setProjectOverlay(null)}
       >
         <Image
