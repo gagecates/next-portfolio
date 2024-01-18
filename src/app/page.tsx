@@ -12,7 +12,9 @@ export default function Home() {
     <main id="main">
       <div className="lg:flex lg:justify-between lg:gap-4">
         <div className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/3 lg:flex-col lg:justify-between lg:pb-16">
-          <Header />
+          <div className="absolute top-0 right-5 mobile:relative">
+            <Header />
+          </div>
           <div className="hidden lg:block">
             <Creds />
           </div>
