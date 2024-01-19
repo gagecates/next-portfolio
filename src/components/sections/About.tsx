@@ -4,7 +4,7 @@ import SectionView from "./SectionView";
 export default function About() {
   return (
     <SectionWrapper>
-      <div className="flex flex-col gap-4 text-xs mobile:text-xl typewriter-about">
+      <div className="flex flex-col gap-4 text-xs mobile:text-xl typewriter-about mt-10 mobile:mt-0">
         <SectionView>
           <p>
             I left my life as an electrician behind to pursue software

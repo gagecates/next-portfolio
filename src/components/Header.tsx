@@ -13,12 +13,13 @@ export function Header() {
       )
     );
   };
-
   return (
     <div className="lg:ml-16 lg:pt-24 mt-4 flex flex-col items-center lg:items-start">
-      <div className="text-5xl mb-4 title-font">{name()}</div>
+      <div className="text-3xl mobile:text-5xl mb-4 title-font">{name()}</div>
       <div className="lg:w-5/6">
-        <div className="ml-1 typewriter ">Full-stack Software Engineer</div>
+        <div className="ml-1 typewriter text-xs mobile:text-sm">
+          Full-stack Software Engineer
+        </div>
       </div>
       <Nav />
     </div>

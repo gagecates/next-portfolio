@@ -19,7 +19,7 @@ export default function Nav() {
   };
 
   return (
-    <div className="lg:mt-16 mt-6 lg:ml-1">
+    <div className="mt-3 lg:mt-16 lg:ml-1">
       <div className="flex lg:flex-col gap-6">
         {links.map((l: Record<string, string>) => (
           <Link key={`nav-link-${l.ref}`} href={l.ref}>
