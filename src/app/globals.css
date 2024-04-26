@@ -208,7 +208,7 @@ html {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: .15em solid white; /* The typewriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
-  letter-spacing: .12em; /* Adjust as needed */
+  letter-spacing: .03em; /* Adjust as needed */
   animation: 
     typewriter 4s steps(40) 1s forwards, /* 4s: duration, 40: number of steps (characters), 1s: delay */
     blink-caret .75s step-end infinite;

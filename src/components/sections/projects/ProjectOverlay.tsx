@@ -27,9 +27,11 @@ export default function ProjectOverlay({ info }: Props) {
         ))}
       </div>
       <div className="flex flex-col items-center text-indigo-800 text-smallish">
-        <a href={url} target="_blank" className="hover:text-black">
-          View live site
-        </a>
+          {url && (
+              <a href={url} target="_blank" className="hover:text-black">
+                View live site
+              </a>
+          )}
         <a href={github} target="_blank" className="hover:text-black">
           View code
         </a>

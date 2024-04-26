@@ -3,6 +3,20 @@ import ExperienceDetails from "./ExperienceDetails";
 
 export default function Experience() {
   const jobs = [
+      {
+      date: "Jan 2024 - Present",
+      company: "MRGN",
+      position: "Full-stack Engineer",
+      description:
+        "MRGN is a next level business intelligence platform. Providing all the tools to help businesses of all sizes visualize and act on vital financial aspects. From burn rate to dynamic simulations to make proactive decisions",
+      duties: [
+        "Used the newest technologies to create a user friendly dashboard full of key metrics and KPIs",
+        "Re-created the existing tables to make a globally re-usable and easy to implement component that reduced thousands of lines of code",
+        "Handled an integration with a third party that captured user input and then mapped it accordingly to a MongoDB",
+        "Utilized Google Tag Manger to provide tracking throughout the use of the application",
+      ],
+      stack: ["React", "Redux", "Node.js", "MongoDB", "AWS", "GCP"],
+    },
     {
       date: "Dec 2021 - Jan 2024",
       company: "Cedar Systems",
@@ -21,21 +35,7 @@ export default function Experience() {
       stack: ["React", "Python", "Flask", "PostgreSQL", "GCP"],
     },
     {
-      date: "June 2021 - Present",
-      company: "MRGN",
-      position: "Full-stack Engineer",
-      description:
-        "MRGN is a next level business intelligence platform. Providing all the tools to help businesses of all sizes visualize and act on vital financial aspects. From burn rate to dynamic simulations to make proactive decisions",
-      duties: [
-        "Used the newest technologies to create a user friendly dashboard full of key metrics and KPIs",
-        "Re-created the existing tables to make a globally re-usable and easy to implement component that reduced thousands of lines of code",
-        "Handled an integration with a third party that captured user input and then mapped it accordingly to a MongoDB",
-        "Utilized Google Tag Manger to provide tracking throughout the use of the application",
-      ],
-      stack: ["React", "Redux", "Node.js", "MongoDB", "AWS", "GCP"],
-    },
-    {
-      date: "July 2021 - Nov 2021",
+      date: "Jul 2021 - Nov 2021",
       company: "Come With",
       position: "Full-stack Engineer",
       description:
