@@ -41,7 +41,7 @@ export function Creds() {
         </a>
       </div>
       <div className="flex justify-center gap-3 mt-2">
-        <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+        <a href="/Resume.pdf" target="_blank" rel="noopener noreferrer">
           <GrDocumentText className="hover:text-indigo-800 cursor-pointer mb-2" />
         </a>
         <a
