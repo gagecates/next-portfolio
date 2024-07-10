@@ -37,7 +37,7 @@ export default function Contact() {
           from_phone: phoneNumber,
           message: message,
         },
-        process.env.NEXT_PUBLIC_EMAIL_PUBLIC_KEY ?? ""
+        process.env.NEXT_PUBLIC_EMAIL_PUBLIC_KEY ?? "",
       )
       .then(
         (result) => {
@@ -47,10 +47,10 @@ export default function Contact() {
         },
         (error) => {
           alert(
-            "Woops, there was an issue sending the email. Please try again!"
+            "Woops, there was an issue sending the email. Please try again!",
           );
           setLoading(false);
-        }
+        },
       );
   };
 
@@ -96,13 +96,16 @@ export default function Contact() {
                 "bg-opacity-75 cursor-default ": !formValid,
                 "cursor-pointer bg-indigo-800 text-white hover:bg-opacity-50":
                   formValid,
-              }
+              },
             )}
             onClick={handleSubmit}
           >
             {getButtonText()}
           </button>
         </div>
+      </div>
+      <div>
+        <a href="https://stage.mrgn.dev">MRGN</a>
       </div>
     </SectionWrapper>
   );
