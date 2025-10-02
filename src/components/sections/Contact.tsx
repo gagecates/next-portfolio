@@ -66,6 +66,9 @@ export default function Contact() {
   return (
     <SectionWrapper id="contact">
       <div className="w-full flex flex-col gap-6">
+        <div className="text-4xl text-indigo-800 text-center mb-6">
+          Get in touch!
+        </div>
         <div className="flex gap-6">
           <TextInput
             placeholder="First name"

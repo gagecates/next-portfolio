@@ -3,7 +3,7 @@ import ExperienceDetails from "./ExperienceDetails";
 
 export default function Experience() {
   const jobs = [
-      {
+    {
       date: "Jan 2024 - Present",
       company: "MRGN",
       position: "Full-stack Engineer",
